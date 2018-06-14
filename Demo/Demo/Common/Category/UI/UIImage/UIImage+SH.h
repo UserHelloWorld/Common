@@ -13,4 +13,7 @@
 /** 通过颜色来生成一个纯色图片 */
 + (UIImage *)buttonImageBounds:(CGRect)bounds color:(UIColor *)color;
 
+/** 压缩图片指定范围 */
++ (NSData *)zipImageWithImage:(UIImage *)image;
+
 @end

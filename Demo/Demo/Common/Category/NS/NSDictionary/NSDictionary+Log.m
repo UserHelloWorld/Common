@@ -1,5 +1,5 @@
 //
-//  NSDictionary+SH.h
+//  NSDictionary+Log.h
 //
 //
 //  Created by apple on 16/06/16.

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18057B6B20C900000081305D /* NSDictionary+SH.m in Sources */ = {isa = PBXBuildFile; fileRef = 18057B6A20C900000081305D /* NSDictionary+SH.m */; };
 		1857649B20C4E94D00D95BBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1857649A20C4E94D00D95BBE /* AppDelegate.m */; };
 		1857649E20C4E94D00D95BBE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1857649D20C4E94D00D95BBE /* ViewController.m */; };
 		185764A120C4E94D00D95BBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1857649F20C4E94D00D95BBE /* Main.storyboard */; };
@@ -31,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18057B6920C900000081305D /* NSDictionary+SH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SH.h"; sourceTree = "<group>"; };
+		18057B6A20C900000081305D /* NSDictionary+SH.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SH.m"; sourceTree = "<group>"; };
 		1857649620C4E94D00D95BBE /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1857649920C4E94D00D95BBE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1857649A20C4E94D00D95BBE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -240,8 +243,10 @@
 		185764CA20C4E96300D95BBE /* NSDictionary */ = {
 			isa = PBXGroup;
 			children = (
-				185764CB20C4E96300D95BBE /* NSDictionary+Log.m */,
 				185764CC20C4E96300D95BBE /* NSDictionary+Log.h */,
+				185764CB20C4E96300D95BBE /* NSDictionary+Log.m */,
+				18057B6920C900000081305D /* NSDictionary+SH.h */,
+				18057B6A20C900000081305D /* NSDictionary+SH.m */,
 			);
 			path = NSDictionary;
 			sourceTree = "<group>";
@@ -384,6 +389,7 @@
 				185764E420C4E96300D95BBE /* UIScrollView+SH.m in Sources */,
 				185764A920C4E94D00D95BBE /* main.m in Sources */,
 				185764E820C4E96300D95BBE /* UIImageView+SH.m in Sources */,
+				18057B6B20C900000081305D /* NSDictionary+SH.m in Sources */,
 				185764EE20C4E96400D95BBE /* NSDate+SH.m in Sources */,
 				185764ED20C4E96300D95BBE /* NSSet+SH.m in Sources */,
 				185764E520C4E96300D95BBE /* UILabel+SH.m in Sources */,
