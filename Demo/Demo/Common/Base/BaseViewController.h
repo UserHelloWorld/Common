@@ -20,7 +20,13 @@
 - (void)createLeftButton;
 
 /** 注册通知中心 */
-- (void)addCenterNotifyName:(NSString *)notifyName;
+- (void)addCenterNotifyName:(NSNotificationName)notifyName;
+
+/** 移除通知 */
+- (void)removeNotifyName:(NSNotificationName)notifyName;
+
+/** 移除所有通知 */
+- (void)removeAllNotify;
 
 /** 发送通知返回结果 */
 - (void)messageNotify:(NSNotification *)notify;

@@ -19,10 +19,10 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    if (self.navigationController != nil)
-    {
+//    if (self.navigationController != nil)
+//    {
 //        self.navigationController.navigationBar.hidden = NO;
-    }
+//    }
 }
 
 - (void)createLeftButton
@@ -66,12 +66,23 @@
     [rootViewCtrl presentViewController:viewController animated:YES completion:completion];
 }
 
-- (void)addCenterNotifyName:(NSString *)notifyName
+- (void)addCenterNotifyName:(NSNotificationName)notifyName
 {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(messageNotify:) name:notifyName object:nil];
 }
 
-- (void)messageNotify:(NSNotification *)notify{}
+- (void)removeNotifyName:(NSNotificationName)notifyName {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:notifyName object:nil];
+}
+
+- (void)removeAllNotify {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)messageNotify:(NSNotification *)notify{
+    NSLog(@"%@",notify);
+}
+
 
 #pragma mark - Lazy
 - (NSMutableArray *)dataArray {

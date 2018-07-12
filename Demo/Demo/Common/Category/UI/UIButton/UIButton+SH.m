@@ -18,6 +18,9 @@
 }
 
 - (void)setBorderWidth:(CGFloat)width borderColor:(UIColor *)color radius:(CGFloat)radius {
+    
+   
+    
     self.layer.masksToBounds = YES;
     self.layer.cornerRadius = radius;
     self.layer.borderWidth = width;

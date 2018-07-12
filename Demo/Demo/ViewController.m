@@ -21,6 +21,8 @@
     int a[] = {1,2,3,4};
     int *p = a;
     NSLog(@"%d %d %d",*p,*(p+1),*(p+2));
+    [self addCenterNotifyName:@""];
+     
 }
 
 + (UIViewController *)user {

@@ -8,11 +8,12 @@
 
 #import "SHAppData.h"
 
-static NSString *const groupName     = @"groupName"; //!< 组
-static NSString *const numberLED     = @"numberLED";
-static NSString *const selectedRow   = @"selectedRow";
-static NSString *const sequenceNum   = @"sequenceNum";
+typedef NSString *UserDefaultName;
 
+static UserDefaultName const groupName     = @"groupName"; //!< 组
+static UserDefaultName const numberLED     = @"numberLED";
+static UserDefaultName const selectedRow   = @"selectedRow";
+static UserDefaultName const sequenceNum   = @"sequenceNum";
 
 @implementation SHAppData
 

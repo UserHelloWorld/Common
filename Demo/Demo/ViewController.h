@@ -6,9 +6,9 @@
 //  Copyright © 2018年 apple. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : BaseViewController
 
 @property (strong, nonatomic, class) UIViewController *user;
 
