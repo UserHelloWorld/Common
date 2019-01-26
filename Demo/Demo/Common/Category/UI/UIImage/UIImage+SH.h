@@ -16,4 +16,6 @@
 /** 压缩图片指定范围 */
 + (NSData *)zipImageWithImage:(UIImage *)image;
 
+// 给图片加个圆角
+- (UIImage *)circleImage;
 @end

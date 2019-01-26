@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "NotifyMacro.h"
 #import "NFConstant.h"
+#import "Header.h"
 @interface AppDelegate ()
 
 @end
@@ -17,7 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    NSLog(@"%@",WBAppkey);
+    WeakSelf(hh);
+    
     return YES;
 }
 

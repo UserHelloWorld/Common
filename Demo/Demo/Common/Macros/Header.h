@@ -36,7 +36,15 @@
 
 #define kIsiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 
+#define kStatusBarAndNavigationBarHeight (kIsiPhoneX ? 88.f : 64.f)
+
 #define kHeightiPhoneX 24
+
+#define AppTabbarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:50) // 适配iPhone x 底栏高度
+
+#define bs if(kIsiPhoneX) { \
+        \
+} \
 
 #define iPhone5 320
 
