@@ -282,9 +282,9 @@
 			isa = PBXGroup;
 			children = (
 				1849583020D245BD00C28F38 /* SHAppData.h */,
-				1849583120D245BD00C28F38 /* Authorization.m */,
 				1849583220D245BD00C28F38 /* SHAppData.m */,
 				1849583320D245BD00C28F38 /* Authorization.h */,
+				1849583120D245BD00C28F38 /* Authorization.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
