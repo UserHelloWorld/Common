@@ -20,7 +20,7 @@
 - (void)createLeftButton;
 
 /** 注册通知中心 */
-- (void)addCenterNotifyName:(NSNotificationName)notifyName;
+- (void)addCenterNotifyName:(NSNotificationName)notifyName object:(id)obj;
 
 /** 移除通知 */
 - (void)removeNotifyName:(NSNotificationName)notifyName;
@@ -30,5 +30,16 @@
 
 /** 发送通知返回结果 */
 - (void)messageNotify:(NSNotification *)notify;
+
+
+/**
+ 显示AlertView
+
+ @param title 标题
+ @param message 副标题
+ @param cancelStr 取消
+ @param confirmStr 确定
+ */
+- (void)showAlertViewTitle:(NSString *)title message:(NSString *)message cancelStr:(NSString *)cancelStr confirmStr:(NSString *)confirmStr confirmCompletion:(void (^)(void))completion;
 
 @end

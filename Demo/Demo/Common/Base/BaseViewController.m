@@ -17,14 +17,6 @@
     [super viewDidLoad];
 }
 
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-//    if (self.navigationController != nil)
-//    {
-//        self.navigationController.navigationBar.hidden = NO;
-//    }
-}
-
 - (void)createLeftButton
 {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -66,23 +58,42 @@
     [rootViewCtrl presentViewController:viewController animated:YES completion:completion];
 }
 
-- (void)addCenterNotifyName:(NSNotificationName)notifyName
+- (void)addCenterNotifyName:(NSNotificationName)notifyName object:(id)obj
 {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(messageNotify:) name:notifyName object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(messageNotify:) name:notifyName object:obj];
 }
 
 - (void)removeNotifyName:(NSNotificationName)notifyName {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:notifyName object:nil];
 }
 
+
 - (void)removeAllNotify {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
+/// 通知回调结果
 - (void)messageNotify:(NSNotification *)notify{
     NSLog(@"%@",notify);
 }
 
+
+- (void)showAlertViewTitle:(NSString *)title message:(NSString *)message cancelStr:(NSString *)cancelStr confirmStr:(NSString *)confirmStr confirmCompletion:(void (^)(void))completion{
+  
+    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    if (cancelStr) {
+        UIAlertAction *cancel = [UIAlertAction actionWithTitle:cancelStr style:UIAlertActionStyleDefault handler:nil];
+        [alertVC addAction:cancel];
+    }
+    if (confirmStr) {
+        UIAlertAction *confirm = [UIAlertAction actionWithTitle:confirmStr style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            if (completion) completion();
+        }];
+        [alertVC addAction:confirm];
+    }
+    
+    [self presentViewController:alertVC animated:YES completion:nil];
+}
 
 #pragma mark - Lazy
 - (NSMutableArray *)dataArray {

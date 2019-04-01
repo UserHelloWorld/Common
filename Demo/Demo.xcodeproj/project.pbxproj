@@ -165,8 +165,8 @@
 		1849580B20D245BD00C28F38 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
-				1849580C20D245BD00C28F38 /* UIButton+SH.m */,
 				1849580D20D245BD00C28F38 /* UIButton+SH.h */,
+				1849580C20D245BD00C28F38 /* UIButton+SH.m */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
