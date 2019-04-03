@@ -8,8 +8,10 @@
 
 #import "ViewController.h"
 #import "NSDictionary+SH.h"
-#import "Common/Category/UI/UIImage/UIImage+SH.h"
-#import "Common/Category/UI/UIButton/UIButton+SH.h"
+#import "UIButton+SH.h"
+#import "UIImage+SH.h"
+#import "UILabel+SH.h"
+#import "NSString+SH.h"
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *btn;
 
@@ -21,18 +23,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   UIImage *image = [[UIImage buttonImageBounds:CGRectMake(0, 0, 60, 40) color:[UIColor purpleColor]] circleImage];
-    int a[] = {1,2,3,4};
-    int *p = a;
-    NSLog(@"%d %d %d",*p,*(p+1),*(p+2));
+//   UIImage *image = [[UIImage buttonImageBounds:CGRectMake(0, 0, 60, 40) color:[UIColor purpleColor]] circleImage];
+//    int a[] = {1,2,3,4};
+//    int *p = a;
+//    NSLog(@"%d %d %d",*p,*(p+1),*(p+2));
+//    [UIButton createButtonFrame:CGRectMake(100, 100, 100, 100) title:@"的脸孔" backgroundImage:image addSuperView:self.view action:^(UIButton *sender) {
+//
+//    }];
     
-    UIButton *btn = [UIButton createButtonFrame:CGRectMake(100, 100, 100, 100) title:nil backgroundImage:image action:^(UIButton *sender) {
-       NSLog(@"%@",sender.titleLabel.text);
-
-    }];
-    [btn setTitle:@"ds" forState:UIControlStateNormal];
-    [self.view addSubview:btn];
     
+    
+    UILabel *label = [[UILabel alloc] init];
+    NSString *text = @"算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所12";
+    
+   NSAttributedString *attributedString = [text convertAttributedStringWithFont:[UIFont systemFontOfSize:17] lineSpacing:10  firstLineHeadIndent:10 headIndent:0];
+    CGSize size =  [NSString calculateAttributedString:attributedString rectWithSize:CGSizeMake(300, MAXFLOAT)];
+    
+//  size =  [text calculateSizeWithFont:[UIFont systemFontOfSize:17] rectWithSize:CGSizeMake(300, MAXFLOAT)];
+    
+    label.frame = CGRectMake(10, 100, 300, size.height);
+    label.numberOfLines = 0;
+    label.backgroundColor = [UIColor lightGrayColor];
+    label.attributedText = attributedString;
+//    label.text = text;
+    [self.view addSubview:label];
+	
     
 }
 

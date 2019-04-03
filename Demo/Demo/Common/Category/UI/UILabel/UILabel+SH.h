@@ -10,4 +10,6 @@
 
 @interface UILabel (SH)
 
+- (CGSize)attributeText:(NSString *)text;
+
 @end

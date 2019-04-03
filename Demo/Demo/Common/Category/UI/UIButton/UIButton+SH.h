@@ -12,7 +12,7 @@
 
 
 /** 创建button */
-+ (UIButton *)createButtonFrame:(CGRect)frame title:(NSString *)title backgroundImage:(UIImage *)image action:(void (^) (UIButton *sender))actionBlock;
++ (UIButton *)createButtonFrame:(CGRect)frame title:(NSString *)title backgroundImage:(UIImage *)image addSuperView:(UIView *)superView action:(void (^) (UIButton *sender))actionBlock;
 
 /** 设置圆角半径 */
 - (void)setRadius:(CGFloat)radius;
