@@ -12,7 +12,13 @@
 #import "UIImage+SH.h"
 #import "UILabel+SH.h"
 #import "NSString+SH.h"
+#import "NFGlobalVariable.h"
+#import "Header.h"
+
+NSString *abcdefg;
+
 @interface ViewController ()
+
 @property (weak, nonatomic) IBOutlet UIButton *btn;
 
 @end
@@ -23,6 +29,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+#define S 1
+    
+    CAAnimation *c;
+    c.delegate = self;
+    UITableView *d;
+    d.delegate = self;
+    CALayer *s;
+    s.delegate = self;
+
 //   UIImage *image = [[UIImage buttonImageBounds:CGRectMake(0, 0, 60, 40) color:[UIColor purpleColor]] circleImage];
 //    int a[] = {1,2,3,4};
 //    int *p = a;
@@ -30,7 +46,6 @@
 //    [UIButton createButtonFrame:CGRectMake(100, 100, 100, 100) title:@"的脸孔" backgroundImage:image addSuperView:self.view action:^(UIButton *sender) {
 //
 //    }];
-    
     
     
     UILabel *label = [[UILabel alloc] init];

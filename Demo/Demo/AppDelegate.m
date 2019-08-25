@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "NotifyMacro.h"
-#import "NFConstant.h"
 #import "Header.h"
 @interface AppDelegate ()
 

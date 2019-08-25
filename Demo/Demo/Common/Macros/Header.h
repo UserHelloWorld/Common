@@ -38,7 +38,6 @@
 
 #define kStatusBarAndNavigationBarHeight (kIsiPhoneX ? 88.f : 64.f)
 
-#define kHeightiPhoneX 24
 
 #define AppTabbarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:50) // 适配iPhone x 底栏高度
 
@@ -46,13 +45,23 @@
         \
 } \
 
-#define iPhone5 320
-
 #ifdef __OBJC__
 
 typedef void(^ReturnBlock)(id data);
+#import "NFGlobalVariable.h"
+
+
 
 #endif
+
+
+#define weakify(var) __weak typeof(var) XYWeak_##var = var;
+
+#define strongify(var) \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Wshadow\"") \
+__strong typeof(var) var = XYWeak_##var; \
+_Pragma("clang diagnostic pop")
 
 
 #ifdef DEBUG

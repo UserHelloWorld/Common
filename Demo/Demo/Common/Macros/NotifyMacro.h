@@ -12,6 +12,6 @@
 NSNotificationName const USA = @"295258370";
 
 
-
-
 #endif /* NotifyMacro_h */
+
+

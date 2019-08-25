@@ -10,6 +10,8 @@
 
 typedef NSString *UserDefaultName;
 
+static NSString *abcdefg;
+
 static UserDefaultName const groupName     = @"groupName"; //!< 组
 static UserDefaultName const numberLED     = @"numberLED";
 static UserDefaultName const selectedRow   = @"selectedRow";

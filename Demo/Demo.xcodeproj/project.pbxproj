@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18570EFC2255D75800B9E8C0 /* NFGlobalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 18570EFB2255D75800B9E8C0 /* NFGlobalVariable.m */; };
 		1857649B20C4E94D00D95BBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1857649A20C4E94D00D95BBE /* AppDelegate.m */; };
 		1857649E20C4E94D00D95BBE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1857649D20C4E94D00D95BBE /* ViewController.m */; };
 		185764A120C4E94D00D95BBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1857649F20C4E94D00D95BBE /* Main.storyboard */; };
@@ -33,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18570EFA2255D75800B9E8C0 /* NFGlobalVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NFGlobalVariable.h; sourceTree = "<group>"; };
+		18570EFB2255D75800B9E8C0 /* NFGlobalVariable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NFGlobalVariable.m; sourceTree = "<group>"; };
 		1857649620C4E94D00D95BBE /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1857649920C4E94D00D95BBE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1857649A20C4E94D00D95BBE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,7 +77,6 @@
 		187562252251E6000067BF5A /* NSDate+SH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SH.m"; sourceTree = "<group>"; };
 		187562272251E6000067BF5A /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		187562282251E6000067BF5A /* NotifyMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyMacro.h; sourceTree = "<group>"; };
-		187562292251E6000067BF5A /* NFConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFConstant.h; sourceTree = "<group>"; };
 		1875622B2251E6000067BF5A /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		1875622C2251E6000067BF5A /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		1875622E2251E6000067BF5A /* SHAppData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAppData.h; sourceTree = "<group>"; };
@@ -291,7 +293,8 @@
 			children = (
 				187562272251E6000067BF5A /* Header.h */,
 				187562282251E6000067BF5A /* NotifyMacro.h */,
-				187562292251E6000067BF5A /* NFConstant.h */,
+				18570EFA2255D75800B9E8C0 /* NFGlobalVariable.h */,
+				18570EFB2255D75800B9E8C0 /* NFGlobalVariable.m */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
@@ -309,9 +312,9 @@
 			isa = PBXGroup;
 			children = (
 				1875622E2251E6000067BF5A /* SHAppData.h */,
-				1875622F2251E6000067BF5A /* Authorization.m */,
 				187562302251E6000067BF5A /* SHAppData.m */,
 				187562312251E6000067BF5A /* Authorization.h */,
+				1875622F2251E6000067BF5A /* Authorization.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 			files = (
 				187562322251E6000067BF5A /* UIImage+SH.m in Sources */,
 				187562402251E6000067BF5A /* BaseViewController.m in Sources */,
+				18570EFC2255D75800B9E8C0 /* NFGlobalVariable.m in Sources */,
 				187562372251E6000067BF5A /* UIView+SH.m in Sources */,
 				187562422251E6000067BF5A /* SHAppData.m in Sources */,
 				1875623A2251E6000067BF5A /* NSDictionary+Log.m in Sources */,
