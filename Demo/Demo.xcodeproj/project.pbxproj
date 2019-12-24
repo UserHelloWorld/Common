@@ -31,6 +31,10 @@
 		187562402251E6000067BF5A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1875622B2251E6000067BF5A /* BaseViewController.m */; };
 		187562412251E6000067BF5A /* Authorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1875622F2251E6000067BF5A /* Authorization.m */; };
 		187562422251E6000067BF5A /* SHAppData.m in Sources */ = {isa = PBXBuildFile; fileRef = 187562302251E6000067BF5A /* SHAppData.m */; };
+		18F07D8C23A8B165005776AF /* AppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F07D8B23A8B165005776AF /* AppUtils.m */; };
+		18F07D9B23A8DB46005776AF /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F07D9A23A8DB46005776AF /* NSArray+Safe.m */; };
+		18F07D9E23A8DB59005776AF /* NSDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F07D9D23A8DB59005776AF /* NSDictionary+Safe.m */; };
+		18F07DA123A8DB69005776AF /* NSString+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F07DA023A8DB69005776AF /* NSString+Safe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +87,14 @@
 		1875622F2251E6000067BF5A /* Authorization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Authorization.m; sourceTree = "<group>"; };
 		187562302251E6000067BF5A /* SHAppData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAppData.m; sourceTree = "<group>"; };
 		187562312251E6000067BF5A /* Authorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Authorization.h; sourceTree = "<group>"; };
+		18F07D8A23A8B165005776AF /* AppUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppUtils.h; sourceTree = "<group>"; };
+		18F07D8B23A8B165005776AF /* AppUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppUtils.m; sourceTree = "<group>"; };
+		18F07D9923A8DB46005776AF /* NSArray+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Safe.h"; sourceTree = "<group>"; };
+		18F07D9A23A8DB46005776AF /* NSArray+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
+		18F07D9C23A8DB59005776AF /* NSDictionary+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Safe.h"; sourceTree = "<group>"; };
+		18F07D9D23A8DB59005776AF /* NSDictionary+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Safe.m"; sourceTree = "<group>"; };
+		18F07D9F23A8DB69005776AF /* NSString+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Safe.h"; sourceTree = "<group>"; };
+		18F07DA023A8DB69005776AF /* NSString+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Safe.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +249,12 @@
 				1875621D2251E6000067BF5A /* NSArray */,
 				187562202251E6000067BF5A /* NSSet */,
 				187562232251E6000067BF5A /* NSDate */,
+				18F07D9923A8DB46005776AF /* NSArray+Safe.h */,
+				18F07D9A23A8DB46005776AF /* NSArray+Safe.m */,
+				18F07D9C23A8DB59005776AF /* NSDictionary+Safe.h */,
+				18F07D9D23A8DB59005776AF /* NSDictionary+Safe.m */,
+				18F07D9F23A8DB69005776AF /* NSString+Safe.h */,
+				18F07DA023A8DB69005776AF /* NSString+Safe.m */,
 			);
 			path = NS;
 			sourceTree = "<group>";
@@ -295,6 +313,8 @@
 				187562282251E6000067BF5A /* NotifyMacro.h */,
 				18570EFA2255D75800B9E8C0 /* NFGlobalVariable.h */,
 				18570EFB2255D75800B9E8C0 /* NFGlobalVariable.m */,
+				18F07D8A23A8B165005776AF /* AppUtils.h */,
+				18F07D8B23A8B165005776AF /* AppUtils.m */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
@@ -393,12 +413,14 @@
 				187562402251E6000067BF5A /* BaseViewController.m in Sources */,
 				18570EFC2255D75800B9E8C0 /* NFGlobalVariable.m in Sources */,
 				187562372251E6000067BF5A /* UIView+SH.m in Sources */,
+				18F07D9B23A8DB46005776AF /* NSArray+Safe.m in Sources */,
 				187562422251E6000067BF5A /* SHAppData.m in Sources */,
 				1875623A2251E6000067BF5A /* NSDictionary+Log.m in Sources */,
 				187562412251E6000067BF5A /* Authorization.m in Sources */,
 				1875623D2251E6000067BF5A /* NSArray+Log.m in Sources */,
 				187562332251E6000067BF5A /* UIScrollView+SH.m in Sources */,
 				187562342251E6000067BF5A /* UILabel+SH.m in Sources */,
+				18F07DA123A8DB69005776AF /* NSString+Safe.m in Sources */,
 				1875623C2251E6000067BF5A /* NSString+SH.m in Sources */,
 				1875623B2251E6000067BF5A /* NSDictionary+SH.m in Sources */,
 				1857649E20C4E94D00D95BBE /* ViewController.m in Sources */,
@@ -408,6 +430,8 @@
 				187562362251E6000067BF5A /* UIView+SHFrame.m in Sources */,
 				187562382251E6000067BF5A /* UIImageView+SH.m in Sources */,
 				1875623F2251E6000067BF5A /* NSDate+SH.m in Sources */,
+				18F07D9E23A8DB59005776AF /* NSDictionary+Safe.m in Sources */,
+				18F07D8C23A8B165005776AF /* AppUtils.m in Sources */,
 				187562352251E6000067BF5A /* UIButton+SH.m in Sources */,
 				1857649B20C4E94D00D95BBE /* AppDelegate.m in Sources */,
 			);
@@ -551,6 +575,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -567,6 +592,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
