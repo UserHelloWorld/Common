@@ -10,13 +10,24 @@
 
 @implementation NSString (SH)
 
-- (CGSize)calculateSizeWithFont:(UIFont *)font rectWithSize:(CGSize)size
+- (CGSize)getUISize:(UIFont *)font limitWidth:(CGFloat)width
 {
-    if (self.length < 1) return CGSizeZero;
-     CGSize calculateSize = [self boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:font} context:nil].size;
-    return calculateSize;
+    if (self.length < 1 || font == nil) {
+        return CGSizeZero;
+    }
+    CGSize size = CGSizeMake(width, MAXFLOAT);
+    size = [self boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingTruncatesLastVisibleLine attributes:@{NSFontAttributeName:font} context:nil].size;
+    return size;
 }
 
+- (CGSize)getUISize:(UIFont *)font limitHeight:(CGFloat)height {
+    if (self.length < 1 || font == nil) {
+           return CGSizeZero;
+       }
+       CGSize size = CGSizeMake(MAXFLOAT, height);
+       size = [self boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingTruncatesLastVisibleLine attributes:@{NSFontAttributeName:font} context:nil].size;
+       return size;
+}
 
 - (NSMutableAttributedString *)convertAttributedStringWithFont:(UIFont *)font lineSpacing:(CGFloat)lineSpacing firstLineHeadIndent:(CGFloat)firstLineHeadIndent headIndent:(CGFloat)headIndent
 {

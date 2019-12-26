@@ -1,0 +1,35 @@
+//
+//  PrefixHeader.pch
+//  Demo
+//
+//  Created by apple on 26/12/19.
+//  Copyright © 2019 apple. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#ifdef __OBJC__
+
+#import "NFMacro.h"
+
+typedef void(^ReturnBlock)(id data);
+#import "NFGlobalVariable.h"
+#import "AppUtils.h"
+
+#endif
+
+
+#ifdef DEBUG
+#define NSLog(format, ...) NSLog((@"[行:%d] " format),__LINE__,##__VA_ARGS__)
+#else
+#define NSLog(...) /* 发布模式 */
+#endif
+
+
+
+
+
+
+#endif /* PrefixHeader_pch */

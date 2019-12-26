@@ -13,7 +13,7 @@
 #import "UILabel+SH.h"
 #import "NSString+SH.h"
 #import "NFGlobalVariable.h"
-#import "Header.h"
+//#import "Header.h"
 
 NSString *abcdefg;
 
@@ -46,7 +46,7 @@ NSString *abcdefg;
 //    [UIButton createButtonFrame:CGRectMake(100, 100, 100, 100) title:@"的脸孔" backgroundImage:image addSuperView:self.view action:^(UIButton *sender) {
 //
 //    }];
-    
+    NSLog(@"sds");
     
     UILabel *label = [[UILabel alloc] init];
     NSString *text = @"算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所算得上是所多多所多所12";
@@ -54,16 +54,20 @@ NSString *abcdefg;
    NSAttributedString *attributedString = [text convertAttributedStringWithFont:[UIFont systemFontOfSize:17] lineSpacing:10  firstLineHeadIndent:10 headIndent:0];
     CGSize size =  [NSString calculateAttributedString:attributedString rectWithSize:CGSizeMake(300, MAXFLOAT)];
     
-//  size =  [text calculateSizeWithFont:[UIFont systemFontOfSize:17] rectWithSize:CGSizeMake(300, MAXFLOAT)];
+   size = [text getUISize:[UIFont systemFontOfSize:18] limitWidth:300];
     
     label.frame = CGRectMake(10, 100, 300, size.height);
     label.numberOfLines = 0;
     label.backgroundColor = [UIColor lightGrayColor];
-    label.attributedText = attributedString;
-//    label.text = text;
+//    label.attributedText = attributedString;
+    label.text = text;
     [self.view addSubview:label];
-	
-    
+    kScale(10);
+	kWeak(self)
+    void (^bl)(void) = ^{
+	kStrong(self)
+        
+    };
 }
 
 

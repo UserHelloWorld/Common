@@ -18,4 +18,5 @@
 
 // 给图片加个圆角
 - (UIImage *)circleImage;
+
 @end

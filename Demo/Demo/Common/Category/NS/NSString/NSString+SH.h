@@ -11,8 +11,9 @@
 
 @interface NSString (SH)
 
-/** 计算文字大小 */
-- (CGSize)calculateSizeWithFont:(UIFont *)font rectWithSize:(CGSize)size;
+// 获取字符串大小
+- (CGSize)getUISize:(UIFont *)font limitWidth:(CGFloat)width;
+- (CGSize)getUISize:(UIFont *)font limitHeight:(CGFloat)height;
 
 /**
  NSString转换为NSMutableAttributedString

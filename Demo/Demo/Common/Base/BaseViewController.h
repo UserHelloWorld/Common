@@ -31,7 +31,6 @@
 /** 发送通知返回结果 */
 - (void)messageNotify:(NSNotification *)notify;
 
-
 /**
  显示AlertView
 
