@@ -10,7 +10,13 @@
 
 @implementation NSArray (Safe)
 
-
+- (id)safeObjectIndex:(NSUInteger)index {
+    
+    if (self.count > index && self.count > 0 && index >= 0) {
+        return [self objectAtIndex:index];
+    }
+    return nil;
+}
 
 @end
 

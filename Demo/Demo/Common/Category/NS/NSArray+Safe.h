@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSArray (Safe)
 
-- (void)safeObjectIndex:(NSUInteger)index;
+- (id)safeObjectIndex:(NSUInteger)index;
 
 @end
 
